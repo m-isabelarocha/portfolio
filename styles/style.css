@@ -100,7 +100,6 @@ body {
 
 .aplinksnav:hover {
     background-color: var(--color-hover);
-    padding: 3%;
 }
 
 .apimage {
