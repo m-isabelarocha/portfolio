@@ -82,7 +82,7 @@ body {
     font-size: 1.5rem;
 }
 
-.aplinkssubtittle {
+.aplinksnav {
     display: flex;
     justify-content: center;
     gap: 16px;
