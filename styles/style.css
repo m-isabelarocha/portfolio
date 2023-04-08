@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 :root {
-    --cor-primaria: #4D4D4D;
-    --cor-secundaria: #FFF4E0;
-    --cor-terciaria: #B46060;
-    --cor-hover:#bda597;
+    --first-color: #4D4D4D;
+    --second-color: #FFF4E0;
+    --third-color: #B46060;
+    --color-hover:#bda597;
 
-    --fonte-primaria: 'Krona one', sans-serif;
-    --font-secundaria: 'Montserrat', sans-serif;
+    --first-font: 'Krona one', sans-serif;
+    --second-font: 'Montserrat', sans-serif;
 }
 
 * {
@@ -17,29 +17,29 @@
 
 body {
     box-sizing: border-box;
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
+    background-color: var(--first-color);
+    color: var(--second-color);
 }
 
-.cabecalho {
+.headerhd {
     padding: 2% 0% 0% 15%;
 
 }
 
-.cabecalho__menu {
+.headermenu {
     display: flex;
     gap: 80px;
 }
 
-.cabecalho__menu__link {
-    font-family: var(--font-secundaria);
+.headermenulink {
+    font-family: var(--second-font);
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--cor-terciaria);
+    color: var(--third-color);
     text-decoration: none;
 }
 
-.apresentacao {
+.apresentation {
     padding: 5% 15%;
     display: flex;
     align-items: center;
@@ -47,28 +47,28 @@ body {
     gap: 82px;
 }
 
-.apresentacao__conteudo {
+.apcontent {
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.apresentacao__conteudo__titulo {
+.apcontenttittle {
     font-size: 2.25rem;
-    font-family: var(--fonte-primaria);
+    font-family: var(--first-font);
 }
 
-.titulo-destaque {
-    color: var(--cor-terciaria);
+.tittlecontrast {
+    color: var(--third-color);
 }
 
-.apresentacao__conteudo__texto {
+.apcontenttext {
     font-size: 1.5rem;
-    font-family: var(--font-secundaria);
+    font-family: var(--second-font);
 }
 
-.apresentacao__links {
+.aplinks {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -82,11 +82,11 @@ body {
     font-size: 1.5rem;
 }
 
-.apresentacao__links__navegacao {
+.aplinkssubtittle {
     display: flex;
     justify-content: center;
     gap: 16px;
-    border: 2px solid var(--cor-terciaria);
+    border: 2px solid var(--third-color);
     width: 50%;
     text-align: center;
     border-radius: 8px;
@@ -94,44 +94,44 @@ body {
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
-    color: var(--cor-secundaria);
-    font-family: var(--font-secundaria)
+    color: var(--second-color);
+    font-family: var(--second-font)
 }
 
-.apresentacao__links__navegacao:hover {
-    background-color: var(--cor-hover);
+.aplinksnav:hover {
+    background-color: var(--color-hover);
     padding: 3%;
 }
 
-.apresentacao__imagem {
+.apimage {
     width: 45%;
 }
 
-.rodape {
-    background-color: var(--cor-terciaria);
-    color: var(--cor-s);
+.footerft {
+    background-color: var(--third-color);
+    color: var(--second-color);
     padding: 23.64px;
     text-align: center;
-    font-family: var(--font-secundaria);
+    font-family: var(--second-font);
     font-size: 1.5rem;
     font-weight: 400;
 }
 
 @media (max-width: 1200px) {
-    .cabecalho {
+    .headerhd {
         padding: 10%;
     }
 
-    .cabecalho__menu {
+    .headermenu {
         justify-content: center;
     }
 
-    .apresentacao {
+    .apresentation {
         flex-direction: column-reverse;
         padding: 5%;
     }
 
-    .apresentacao__conteudo {
+    .apcontent {
         width: auto;
     }
 }
